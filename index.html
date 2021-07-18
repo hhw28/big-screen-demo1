@@ -9,7 +9,7 @@
   const designProportion = 16 / 9
   const clientWidth = document.documentElement.clientWidth
   const clientHeight = document.documentElement.clientHeight
-  const pageWidth = clientWidth / clientHeight > designProportion? clientHeight * designProportion : clientWidth
+  window.pageWidth = clientWidth / clientHeight > designProportion? clientHeight * designProportion : clientWidth
   const pageHeight = pageWidth / designProportion
   const string = `<style>html{
         font-size: ${pageWidth / 100}px
